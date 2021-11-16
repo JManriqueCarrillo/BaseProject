@@ -1,2 +1,1 @@
-# BaseProject
-Kotlin Base Project
+# LolProject
