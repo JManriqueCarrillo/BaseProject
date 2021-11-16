@@ -25,7 +25,6 @@ class ChampionsListActivity : BaseActivity<ActivityMainBinding>() {
         super.onCreate(savedInstanceState)
         viewModel.getChampionSummary()
 
-
         viewModel.championSummaryList.observe(this, {
             championsListAdapter.data = it
             binding.championsList.layoutManager = LinearLayoutManager(this)

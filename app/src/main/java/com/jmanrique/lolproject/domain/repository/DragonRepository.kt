@@ -4,5 +4,5 @@ import com.jmanrique.lolproject.domain.entities.ChampionSummary
 import io.reactivex.rxjava3.core.Single
 
 interface DragonRepository {
-    fun getChampionSummary(): Single<List<ChampionSummary>>
+    fun getChampionSummary(): Single<List<ChampionSummary>> //TODO Change to Maybe?
 }

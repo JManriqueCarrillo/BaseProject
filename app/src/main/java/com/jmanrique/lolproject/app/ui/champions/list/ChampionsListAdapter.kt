@@ -31,7 +31,7 @@ class ChampionsListAdapter @Inject constructor(val context: Context) :
             binding.apply {
                 champion.also {
                     Glide.with(context)
-                        .load((it.id).toString().getAvatarUrl())
+                        .load(getAvatarUrl(it.id.toString()))
                         .placeholder(R.drawable.champion_avatar_placeholder)
 //                        .error()
                         .into(binding.championListAvatar)
